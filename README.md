@@ -1,68 +1,81 @@
 # Disease-Prediction-Using-Machine-Learning-Logistic-Regression-
  Predicts disease risk using logistic regression on health data. Includes preprocessing, EDA, training, evaluation, and saves the model as a .pkl file for further use in deployment or analysis.
-# 🧠 Disease Prediction Using Machine Learning (Logistic Regression)
+# 🩺 Disease Prediction Using Machine Learning
 
-This project aims to predict the risk of disease (e.g., stroke) using patient health data by applying Logistic Regression, a supervised machine learning algorithm. The final model is saved as a `.pkl` file for future use or integration into healthcare systems.
-
----
-
-## 📌 Problem Statement
-
-Timely prediction of disease risk can assist healthcare professionals in early intervention. This project uses historical health data to build a logistic regression model that predicts the likelihood of a patient having a disease based on several clinical parameters.
+A simple machine learning project that predicts whether a patient is likely to have diabetes based on medical input features using logistic regression.
 
 ---
 
-## 📊 Dataset
+## 📌 Objective
 
-The dataset contains various patient-level features such as:
-- Age
-- Gender
-- BMI
-- Hypertension
-- Heart Disease
-- Smoking Status
-- Average Glucose Level
-- Stroke (target variable)
-
-> Dataset Source: [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+To develop a machine learning model using Python and Scikit-learn to classify patients as diabetic or non-diabetic based on clinical features.
 
 ---
 
-## 🛠️ Technologies Used
+## 📁 Dataset
 
-| Tool            | Purpose                           |
-|------------------|-----------------------------------|
-| Python           | Programming language              |
-| Jupyter Notebook | Development environment           |
-| Pandas           | Data manipulation                 |
-| NumPy            | Numerical operations              |
-| Matplotlib       | Data visualization                |
-| Seaborn          | Correlation analysis              |
-| Scikit-learn     | Model building and evaluation     |
-| Joblib           | Model serialization (.pkl file)   |
+- Dataset Name: PIMA Indians Diabetes Dataset
+- Source: [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+- Features:
+  - Pregnancies
+  - Glucose
+  - Blood Pressure
+  - Skin Thickness
+  - Insulin
+  - BMI
+  - Diabetes Pedigree Function
+  - Age
+  - **Outcome** (Target variable: 0 = No Diabetes, 1 = Diabetes)
 
 ---
 
-## 🔄 Workflow
+## 📊 Tools & Libraries
 
-### 1. Exploratory Data Analysis (EDA)
-- Checked for missing values
-- Studied feature distributions
-- Plotted correlation heatmaps
+- Python
+- Pandas, NumPy (Data Handling)
+- Matplotlib, Seaborn (Data Visualization)
+- Scikit-learn (ML Modeling)
+- Jupyter Notebook / Google Colab
 
-### 2. Data Preprocessing
-- Encoded categorical variables
-- Filled or dropped missing values
-- Normalized numeric features if needed
-- Split data into train and test sets
+---
 
-### 3. Model Training
-- Logistic Regression applied using Scikit-learn
-- Evaluated using Accuracy, Precision, Recall, F1 Score
+## 🧠 Why Use This Dataset?
 
-### 4. Model Saving
-- Trained model saved using `joblib`:
-```python
-import joblib
-joblib.dump(model, 'stroke_model.pkl')
+The dataset allows us to:
+- Learn patterns from historical medical data.
+- Train a model to generalize for future predictions.
+- Simulate a real-world healthcare analytics problem.
+- Build an end-to-end project using supervised classification.
+
+---
+
+## 🔧 Workflow
+
+1. **Load Dataset**
+2. **Exploratory Data Analysis (EDA)**
+3. **Data Visualization**
+4. **Preprocessing**: Scaling, Train-Test Split
+5. **Model Training**: Logistic Regression
+6. **Prediction**
+7. **Evaluation**: Accuracy, Confusion Matrix, Classification Report
+
+---
+
+## ✅ Results
+
+- Model: Logistic Regression
+- Accuracy: ~75%-80% depending on preprocessing
+- Model is able to generalize on unseen data
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/disease-prediction-ml.git
+
+
+
+
 
