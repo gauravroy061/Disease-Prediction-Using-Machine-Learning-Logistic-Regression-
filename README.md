@@ -73,7 +73,7 @@ The dataset allows us to:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/disease-prediction-ml.git
+   git clone https://github.com/gauravroy061/disease-prediction-ml.git
 
 
 
